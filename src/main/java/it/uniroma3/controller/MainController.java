@@ -39,11 +39,11 @@ public class MainController {
 			ModelAndView model = new ModelAndView();
 
 			if (user != null) {
-				model.addObject("msg", "Hi " + user.getName()
-				+ ", you do not have permission to access this page!");
+				model.addObject("msg", "Ciao " + user.getName()
+				+ ", non hai il permesso per accedere a questa pagina!");
 			} else {
 				model.addObject("msg",
-				"You do not have permission to access this page!");
+				"Non hai il permesso per accedere a questa pagina!");
 			}
 
 			model.setViewName("403");
