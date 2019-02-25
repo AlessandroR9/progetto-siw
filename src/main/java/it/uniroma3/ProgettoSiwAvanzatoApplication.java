@@ -7,7 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import it.uniroma3.model.Utente;
-import it.uniroma3.service.AllievoService;
 import it.uniroma3.service.UserService;
 
 @SpringBootApplication
