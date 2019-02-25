@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link href="./assets/css/main.css" rel="stylesheet" />
+<title>Iscrizione attività</title>
+</head>
+<body class="subpage" style="background-image: url('images/sfondo1.jpg');">
+	<header id="header">
+		<div class="logo"><a th:href="@{/}">Retnec Training Center</a></div>
+		<nav>
+			<a th:href="@{/home}">Homepage</a>
+		</nav>
+	</header>
+	<header class="special" align="center">
+	<h1>Seleziona Allievo ed Attività interessate.</h1>
+	<form th:action="@{/salvaIscrizione}" method="post">
+		<select required>
+			<option th:each="autore : ${allievi}"
+				th:text="${allievo.nome}+' '+${allievo.cognome}"
+				th:value="${allievo.id}"></option>
+		</select> 
+		<br>
+		<select required>
+			<option th:each="attivita : ${lista}"
+				th:text="${attivita.descrizione.getNome()}+' '+${attivita.orario}"
+				th:value="${attivita.id}"></option>
+		</select>
+	</form>
+	</header>
+	
+	<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org">
+	<head>
+		<title>Index</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a th:href="@{/}">Retnec Training Center</a></div>
+			</header>
+
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Benvenuto</h1>
+						<p>Azienda per la gestione di Centri di Formazione</p>
+					</header>
+					<a href="#main" class="button big scrolly">Scopri di più</a>
+				</div>
+			</section>
+
+		<!-- Main -->
+			<div id="main">
+
+				
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<div class="flex flex-3">
+								<div class="col align-center" style="margin-left: 60px">
+									<div class="image round fit"  style="width:400px;height:300px;">
+										<img src="images/login.jpg" style="width:400px;height:300px;"/>
+									</div>
+									<div style="margin-left:20px">
+									<p>Effettua il Login per accedere ai nostri servizi</p>
+									<a th:href="@{/login}" class="button">Login</a>
+								</div>
+								</div>
+								<div class="col align-center" style="margin-right: 100px">
+									<div class="image round fit"  style="width:400px;height:300px;">
+										<img src="images/signup.jpg" style="width:400px;height:300px;"/>
+									</div>
+									<div style="margin-left:100px">
+									<p>Se non hai un account, registrati</p>
+									<a th:href="@{/registra}" class="button">Registrati</a>
+								</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

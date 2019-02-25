@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org">
+	<head>
+		<title>Homepage Azienda</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<header id="header">
+		<div class="logo"><a th:href="@{/}">Retnec Training Center</a></div>
+		<nav>
+			<a th:href="@{/home}">Homepage</a>
+		</nav>
+	</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Pannello di Amministrazione della Retnec TC</h1>
+						<p>Da qui puoi scegliere un'attivita' da svolgere</p>
+					</header>
+					<a href="#main" class="button big scrolly">Di cosa vuoi occuparti?</a>
+				</div>
+			</section>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a th:href="@{/organizza}" class="link"><img src="images/pic01.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3>Organizza un'attivita'</h3>
+										<p><b>Organizza una nuova attivita' in uno dei nostri Centri di Formazione</b></p>
+										<a th:href="@{/organizza}" class="button">Vai</a>
+									</div>
+								</div>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3>Registra un nuovo Allievo</h3>
+									<p><b>Un nuovo volenteroso studente si e' affacciato alle nostre porte? Cosa aspetti! Inserisci subito i suoi dati prima che cambi idea!</b></p> 
+									<a th:href="@{/registra}" class="button">Vai!</a>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a th:href="@{/registra}" class="link"><img src="images/pic02.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section class="wrapper style1">
+						<div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a th:href="@{/iscrivi}" class="link"><img src="images/pic06.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3>Iscrivi un allievo ad un'attivita'</h3>
+										<p><b>Abbiamo sempre spazio per una persona in piu' nei nostri corsi! Procedi pure e facci sapere quale sara' il suo nome!</b></p>
+										<a th:href="@{/iscrivi}" class="button">Vai!</a>
+									</div>
+								</div>
+						</div>
+					</section>
+
+					<!-- Section -->
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3>Visualizza ulteriori dati</h3>
+									<p><b>Se hai bisogno di qualsiasi cosa, puoi trovarlo qui!</b></p> 
+									<a th:href="@{/visualizza}" class="button">Vai!</a>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a th:href="@{/visualizza}" class="link"><img src="images/pic07.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:tiles="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<head>
+		<title>Accesso Consentito</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage" style="background-image: url('images/sfondo1.jpg');">
+
+		<header id="header">
+		<div class="logo"><a th:href="@{/}">Retnec Training Center</a></div>
+		<nav>
+			<a th:href="@{/home}">Homepage</a>
+		</nav>
+	</header>
+
+		<header class="special">
+	<h1>LOGIN</h1>
+	<form name="f" th:action="@{/login}" method="post">
+		<label for="username">Username:</label> <input type="text"
+			id="username" name="username" /> <label for="password">Password:</label>
+		<input type="password" id="password" name="password" />
+		<br>
+		<button type="reset" class="btn" id="resetbutton">Reset</button>
+		<button type="submit" class="btn" id="bottonelogin">Login</button>
+	</form>
+	</header>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
