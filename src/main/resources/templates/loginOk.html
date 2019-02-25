@@ -25,9 +25,10 @@
 						<div class="inner">
 							<header class="align-center">
 								<h1>LOGIN EFFETTUATO CON SUCCESSO</h1>
-									<div sec:authorize="hasRole('AMMINISTRATORE')">
+									<div sec:authorize="hasRole('ADMIN')">
 										 <a th:href="@{/mostraCentri}"><b>Area Amministratore</b></a>
 									</div>
+									<br>
 									<div sec:authorize="hasRole('RESPONSABILE')">  
 										<a th:href="@{/home}"><b>Area Responsabile</b></a>
 									</div>
