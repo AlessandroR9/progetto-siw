@@ -38,7 +38,8 @@ public class Centro {
 	@OneToMany
 	private List<Allievo> allievo;
 	
-	public Centro(String nome, String indirizzo, String email, int telefono, int capienza) {
+	public Centro(Long id, String nome, String indirizzo, String email, int telefono, int capienza) {
+		this.id = id;
 		this.nome = nome;
 		this.indirizzo = indirizzo;
 		this.email = email;
@@ -48,6 +49,14 @@ public class Centro {
 	
 	public Centro() {
 		
+	}
+	
+	public Long getId(){
+		return id;
+	}
+	
+	public void setId(Long id){
+		this.id=id;
 	}
 	
 	public String getNome() {
