@@ -48,8 +48,7 @@ public class Attivita {
 	public Attivita() {
 	}
 
-	public Attivita(Long id, String nome, GregorianCalendar data, Date orario, List<Allievo> allievi, Centro centro) {
-		super();
+	public Attivita(Long id, String nome, GregorianCalendar data, Date orario, List<Allievo> allievi, Centro centro){
 		this.id = id;
 		this.nome = nome;
 		this.data = data;
